@@ -1,6 +1,6 @@
 export interface Types {
   name: string;
-  nativeName: string;
+  capital: string;
   borders: string;
   img: string;
   population: string;

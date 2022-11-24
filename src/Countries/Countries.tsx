@@ -21,7 +21,7 @@ const Countries = () => {
         const countryResponse = await axios.get<Types>(countryInfo);
         console.log(countryResponse)
         return {...country,
-          nativeName : countryResponse.data.nativeName,
+          capital : countryResponse.data.capital,
           borders: countryResponse.data.borders,
           img: countryResponse.data.flag,
           population: countryResponse.data.population

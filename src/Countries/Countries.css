@@ -1,0 +1,24 @@
+.countries{
+    height: 1200px;
+    overflow: scroll;
+    width: 25%;
+    cursor: pointer;
+}
+
+.countries:first-child{
+    border-top: 1px solid #ccc;
+}
+
+.restCountries{
+    display: flex;
+    border-top: 1px solid #ccc;
+}
+
+.countriesInfo {
+    width: 60%;
+    margin-top: 20px;
+}
+
+img {
+    width: 500px;
+}

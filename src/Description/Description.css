@@ -1,0 +1,19 @@
+.countries{
+    height: 500px;
+    overflow: scroll;
+    width: 25%;
+    cursor: pointer;
+}
+
+.countries:first-child{
+    border-top: 1px solid #ccc;
+}
+
+.restCountries{
+    display: flex;
+    border-top: 1px solid #ccc;
+}
+
+.countriesInfo {
+    width: 60%;
+}

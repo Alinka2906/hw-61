@@ -15,7 +15,7 @@ const Description:React.FC<Props> = ({country}) => {
   useEffect(() => {
     if(country !== null) {
       const getCountryBorders = async () => {
-        const promises = country.borders.data.map(async border => {
+        const promises = country.borders.map(async border => {
           const borderResponse = await axios.get(COUNTRY_URL + border);
           if (borderResponse.data !== null) {
             return borderResponse.data.name;
@@ -39,8 +39,8 @@ const Description:React.FC<Props> = ({country}) => {
           {borders.length !== 0 ? borders.join(', ') : 'Does not border with other countries'}
         </p>
         <p>
-          <span>Native name: </span>
-          {country.nativeName}
+          <span>Country: </span>
+          {country.capital}
         </p>
         <p>
           <span>Population: </span>
